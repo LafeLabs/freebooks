@@ -1,8 +1,12 @@
 # [FREE BOOKS](https://github.com/LafeLabs/freebooks)
 
+![](https://raw.githubusercontent.com/LafeLabs/freebooks/main/images/set.png)
+
 ## [http://localhost/](http://localhost/)
 
-### *self-replicating media*
+
+Install this on a personal machine(windows, mac, linux), a donated old laptop, or a Raspberry Pi.  Create folders in the "media" folder for collections of media(topics, formats, authors, types, purposes, locations etc), and drop media in there to share.  Put the server on a shared wifi network, post a QR code to the IP address of the server, and share the link. Click the link to get a QR code, put http://[your ip address] into the text field and hit enter to update the QR code, then screen shot that, print it, share it etc. to get more people on the wifi to see the server. They can then all download all the books and other media. FREE BOOKS!
+
 
 ### Installing on a windows or mac private machine
 
@@ -16,54 +20,8 @@
 - put sub-folders in the media folder for different kinds of media, put media you want to share in those folders, make a "books" and "music" folder and put pdfs of books in the books folder and .mp3's of songs in the music folder
  
 
-This is local media.  We can install web servers on *everything*: mac and Windows laptops and desktops, Raspberry Pi, and Android and iOS Devices.  Any device can be a server, and we drop files on it to share with others on the same wireless network.  When every device is a server as well as a client, people who share wireless networks can media without the Cloud.  
-
-Digital media content creators are supported by brick and mortar venues.  When a wireless network is the source of a constant stream of interesting and original media content, that brings people into that space.  Creators can both get sponsorships from venues and direct material support.  
-
-This is a way to share media on the Web without the Internet, without the Cloud, without e-commerce, without algorithms or apps or the app store.  There is no user data because there are no users, just files in folders which everyone on the network can download.  The only information we ever put on the network is information we want to share freely.  
-
-The construction of this network represents the building of digital community that is always centered on physically shared spaces.  
-
-
-## Use Cases
-
- - music and art publication/distribution in venues like bars, art galleries, and coffee shops(artists compensated by venues to produce content)
- - medical literature .pdf's in medical waiting rooms
- - local web pages shared from server to server of local organizations, people, places, businesses, artists, etc.(local web)
- - local classifieds and personals ads
- - media for exchange of physical goods: share, give away, buy, and sell crafts, technology, food, locally made goods and unwanted objects, facilitate upcycling 
- - local financial markets, moderating deals between physically local business people
- - music sharing in religious communities(record audio and post to wifi) 
- - local plant, animal, fungus, soil, weather and water knowledge sharing 
- - creating foundational documents for local organizations whose existence is primarily on these local wifi-based networks
- - Documenting self-replicating things made from trash: trash magic
- - Free sharing of books, local library infrastructure, extension of Public Library system
- - free private library of banned books
- - censorship-resistant news distribution, local news
- - rapid creation of historical documents during historical events on location for replication to archives afterward
- - immersive text-based games, mixed reality
-
-
-A very simple way to make a local media server on which people can share simple advertisements for literally anything is to host images of small screenshots and photographs.  We do this with the image feed, linked from the main page via the "Images" link.  The Image Feed has buttons to select an image to upload, then upload the image to the server.  Any image larger than about 1 megabyte won't upload.  For large images, either crop them or screen shot them and then crop the screenshot(this reduces the resolution and makes smaller files).
-
-![](https://raw.githubusercontent.com/LafeLabs/picrust/main/readme-images/images.png)
-
-Anyone can delete any image by turning "delete mode"  on, and then clicking the "DELETE" buttons.  Deletion is forever! Backup everything you care about!  Don't want to lose a thing? Copy it again and again.
-
-![](https://raw.githubusercontent.com/LafeLabs/picrust/main/readme-images/images-delete.png)
-
-In general, media files we want to share can be dropped into folders which are placed in the "media" folder on the servers.
-
-![](https://raw.githubusercontent.com/LafeLabs/picrust/main/readme-images/media.png)
-
-The entire system is self-editing, self-replicating, and self-contained.  Each server contains a code editor which can edit the whole system including itself.  Among the set of files on each system is also a set of scripts which clone the whole system.  Files are cataloged using the script [dnagenerator.php](php/dnagenerator.txt), which creates a file called [data/dna.txt](data/dna.txt) which is finally used by [replicator.php](php/replicator.txt) to copy all the code in the system from one server to the next.  Because all this is free Public Domain code we can host it on Github for free and replicate from there, but once it's replicating out in the wild, we can replicate from one server to another without referencing back to Github if we want. At any time, any instance can then be cloned to a local directory which is pushed out to a public Github repository which can the replicate out globally.  Thus we can move smoothly between totally local private replication and public replication to potentially billions of devices using Github's free hosting of open source projects(or anyone's random personal home pages on the public World Wide Web).
-
-![](https://raw.githubusercontent.com/LafeLabs/picrust/main/readme-images/editorphp.png)
-
-
 ### Install on Pi
 
-Raspberry Pi is now impossible to buy.  Find them donated from someone. Most people who have them don't use them or used them once and stopped due to lack of interest/time/need. Ask around!  Someone will be able to donate a Pi, keyboard, mouse, screen, power supply and whatever other random things you need to get set up.
 
 Get a SD card with 8 GB or more storage and a SD card USB reader
 
@@ -73,7 +31,6 @@ Download and install, then use the Raspberry Pi Imager:
 
 Turn on the pi click through all the things, put it on the wifi network.
 
-## Install Apache and PHP so that geometron can run
 
 Open a command prompt(black link on menu bar) and type:
 
@@ -81,11 +38,6 @@ Open a command prompt(black link on menu bar) and type:
 sudo apt update
 sudo apt install apache2 -y
 sudo apt install php libapache2-mod-php -y
-```
-
-## Install TRASH MAGIC MEDIA server
-
-```
 cd /var/www/html
 sudo rm index.html
 sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/freebooks/main/php/replicator.txt
