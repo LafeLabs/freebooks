@@ -1,5 +1,7 @@
 # [FREE BOOKS](https://github.com/LafeLabs/freebooks)
 
+
+
 ![](https://raw.githubusercontent.com/LafeLabs/freebooks/main/images/set.png)
 
 ## [http://localhost/](http://localhost/)
@@ -121,4 +123,9 @@ Use the Editor built into the system to create a new file called replicator.php 
  - [First Book of Geometron](https://www.trashrobot.org/bookofgeometron/)
  - [Geometron Magic](https://www.trashrobot.org/geometronmagic/)
  - [Trash Magic Books](https://www.trashrobot.org/user.php?scroll=scrolls/trashmagicbooks)
+
+## related: [Solarpunk anarchist Substack on banned book library](https://anarchosolarpunk.substack.com/p/bannedbooklibrary)
+
+
+  
 
